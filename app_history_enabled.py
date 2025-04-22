@@ -61,7 +61,7 @@ company_option = st.selectbox(
 )
 
 if company_option:
-    file_path = f"/Users/pushpanjali/small_poc/open_dart/fs_data_pushp/{company_option}_data.json"
+    file_path = f"fs_data_processed/{company_option}_data.json"
     with open(file_path, "r") as f:
         data = json.load(f)
     context = json.dumps(data, indent=2)
